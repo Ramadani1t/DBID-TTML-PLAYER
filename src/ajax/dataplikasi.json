@@ -1,0 +1,93 @@
+{
+  "data": [
+    {
+      "gambar": "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-ID/refs/heads/main/20250327_072901.png",
+      "versi": "1.0.9.9",
+      "supported_android": "Jelly Bean (4.1.x) - API level 16",
+      "size": "2.62 MB",
+      "sumber": ["Github", "https://github.com/xxx-source/Music-Player/releases/tag/1.0.9.9"],
+      "changelog": ["Memperbaiki masalah di mana lagu berdurasi lebih dari 1 jam tidak dapat diputar.",
+                    "Memperbaiki masalah di mana kemajuan animasi untuk segmentasi kata tidak benar.",
+                    "Mengoptimalkan efek cahaya lirik.",
+                    "Mengoptimalkan masalah guncangan animasi lirik.",
+                    "Mengembalikan mekanisme lama untuk mendapatkan kecepatan penyegaran layar.",
+                    "Efek penekanan yang diterapkan kembali untuk bahasa CJK (terbatas pada panjang 1 karakter).",
+                    "Secara otomatis beralih ke mode layar penuh di antarmuka pemutaran."
+                   ],
+      "download_id": ["Bahasa Indonesia", ""],
+      "download_original": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/871247470/0814ed98-f7fd-47f6-9131-9f19316a7310?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250329%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250329T030326Z&X-Amz-Expires=300&X-Amz-Signature=b478df1f7e0b6a62258b3215f2a64b394da19efcfee199a20434b59fabdd9c15&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DMusic-Player_1.0.9.9_Release.APK&response-content-type=application%2Foctet-stream"
+    },
+    {
+      "gambar": "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-ID/refs/heads/main/20250327_072901.png",
+      "versi": "1.0.9",
+      "supported_android": "Jelly Bean (4.1.x) - API level 16",
+      "size": "2.59 MB",
+      "sumber": ["Github", "https://github.com/xxx-source/Music-Player/releases/tag/1.0.9"],
+      "changelog": ["Penamaan basis data telah distandarisasi, dan data daftar putar yang ada tidak akan tersedia lagi. Harap cadangkan data daftar putar sebelum memperbarui ke versi ini.",
+                    "Memperbaiki masalah penguraian lirik TTML dan meningkatkan stabilitas.",
+                    "Tidak lagi menerapkan efek animasi penekanan pada karakter CJK.",
+                    "Menyesuaikan kecepatan animasi lirik.",
+                    "Memperbaiki beberapa masalah pointer null.",
+                    "Lirik bilah status Lyric-Getter yang didukung (https://github.com/xiaowine/Lyric-Getter).",
+                    "Memperbaiki masalah lirik mengambang yang melayang ke kanan dalam mode lanskap pada layar berlekuk.",
+                    "Menambahkan dukungan untuk membaca tag dalam format OGG.",
+                    "Pembacaan metadata yang dioptimalkan untuk format MP3.",
+                    "Meningkatkan jumlah utas untuk 'pemindaian penuh' guna meningkatkan kecepatan pemindaian.",
+                    "Mendukung Bahasa 'Inggris', 'Prancis', 'Spanyol', 'Korea', 'Jepang', 'Rusia', dan 'Jerman'."
+                   ],
+      "download_id": ["Ditranslate ke Bahasa Indonesia 80%", "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-Player/refs/heads/main/src/sub%20indo/(SUB_IDN)Hifi_Status_1.0.9_Release_clone.APK"],
+      "download_original": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/871247470/d33a62bb-ee81-4b77-8a8e-a19ad14e6e38?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250329%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250329T030424Z&X-Amz-Expires=300&X-Amz-Signature=45d83da46306f8c4f59bca854380ce40b7cb563aee90a590ea7dc065894e7bda&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DMusic-Player_1.0.9_Release.APK&response-content-type=application%2Foctet-stream"
+    },
+    {
+      "gambar": "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-ID/refs/heads/main/20250327_072901.png",
+      "versi": "1.0.8",
+      "supported_android": "Jelly Bean (4.1.x) - API level 16",
+      "size": "2.37 MB",
+      "sumber": ["Github", "https://github.com/xxx-source/Music-Player/releases/tag/1.0.8"],
+      "changelog": ["Optimalkan deteksi pembaruan otomatis",
+                    "Memperbaiki masalah bahwa model di bawah Android 7.0 tidak dapat mengenali paket instalasi"
+                   ],
+      "download_id": ["Bahasa Indonesia", ""],
+      "download_original": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/871247470/de2fac37-8a29-4fc9-9f06-5e2ea8f0c0b9?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250329%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250329T031628Z&X-Amz-Expires=300&X-Amz-Signature=1c10be4f59f3fdd428cd1c072222eaf58dcc931edc234ddc42c38b26047431d1&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DMusic-Player_1.0.8_Release.APK&response-content-type=application%2Foctet-stream"
+    },
+    {
+      "gambar": "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-ID/refs/heads/main/20250327_072901.png",
+      "versi": "1.0.7",
+      "supported_android": "Jelly Bean (4.1.x) - API level 16",
+      "size": "2.37 MB",
+      "sumber": ["Github", "https://github.com/xxx-source/Music-Player/releases/tag/1.0.7"],
+      "changelog": ["Memperbaiki masalah di mana kesalahan logika menyebabkan artis tidak dipilih dengan benar saat mengkliknya",
+                    "Memperbaiki kesalahan penguraian lirik TTML",
+                    "Memperbaiki masalah pengenalan durasi lagu (MP3)",
+                    "Menambahkan kemampuan untuk membuka file audio eksternal",
+                    "Memperbaiki masalah impor daftar lagu",
+                    "Memperbaiki masalah bahwa daftar putar tidak dapat diperbarui",
+                    "Memperbaiki masalah bahwa database daftar putar ada tetapi informasi daftar putar tidak disimpan, sehingga menyebabkan daftar putar tidak dapat ditampilkan",
+                    "Memperbaiki masalah bahwa properti mixer terbaik tidak dapat diterapkan",
+                    "Menambahkan pemeriksaan pembaruan perangkat lunak"
+                   ],
+      "download_id": ["Bahasa Indonesia", ""],
+      "download_original": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/871247470/1ee82187-6caa-49e6-971c-4ea70d22bad4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250329%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250329T005416Z&X-Amz-Expires=300&X-Amz-Signature=42b9aab8298b1668c1d64b254fff9c5769a3fb49ae4fe93634a95d18faa46c86&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DMusic-Player_1.0.7_Release.APK&response-content-type=application%2Foctet-stream"
+    },
+    {
+      "gambar": "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-ID/refs/heads/main/20250327_072901.png",
+      "versi": "1.0.6",
+      "supported_android": "Jelly Bean (4.1.x) - API level 16",
+      "size": "2.39 MB",
+      "sumber": ["Coolapk", ""],
+      "changelog": ["Tidak ada pemeriksaan update", "Perbaikan bug"],
+      "download_id": ["Ditranslate ke Bahasa Indonesia 40%", "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-Player/refs/heads/main/src/sub%20indo/(SUB_IDN)Hifi%20Music%20%5B1.0.6%5D_clone.apk"],
+      "download_original": "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-ID/refs/heads/main/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%20%5B1.0.6%5D.apk"
+    },
+    {
+      "gambar": "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-ID/refs/heads/main/20250327_072901.png",
+      "versi": "1.0.5",
+      "supported_android": "Jelly Bean (4.1.x) - API level 16",
+      "size": "2,47 MB",
+      "sumber": ["Coolapk", ""],
+      "changelog": ["Tidak ada pemeriksaan update"],
+      "download_id": ["Bahasa Indonesia", ""],
+      "download_original": "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-Player/refs/heads/main/src/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8_1.0.5_flow_sign.apk"
+    }
+  ]
+}
