@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTables TTML Player Android</title>
+    <link rel="icon" type="image/jpg" href="https://raw.githubusercontent.com/Ramadani1t/Biodata-Publik/refs/heads/main/Different.jpg">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        .table-container {
+            overflow-x: auto;
+            width: 100%;
+        }
+        .dataTables_wrapper {
+            width: 100%;
+            overflow-x: auto;
+        }
+        .disabled {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+        .description-box {
+            padding: 15px;
+            background: #f8f9fa; /* Latar belakang tetap */
+            border-left: 5px solid #007bff; /* Tetap mempertahankan border kiri */
+            margin-bottom: 20px;
+        }
+        .description-box a {
+            display: inline-flex;
+            align-items: center;
+            background: #007bff; /* Warna tombol tetap */
+            border: 1px solid #0056b3; /* Tambahkan border untuk lebih jelas */
+            padding: 5px 10px; /* Padding tetap */
+            border-radius: 5px; /* Sudut tetap membulat */
+            text-decoration: none; /* Hilangkan garis bawah */
+            color: white; /* Warna teks tetap putih */
+            font-weight: bold;
+            transition: background 0.3s, border 0.3s; /* Efek transisi */
+        }
+        .description-box a:hover {
+            background: #0056b3; /* Efek hover */
+            border: 1px solid #003f7f;
+        }
+        .description-box img {
+            width: 20px; /* Ukuran lebih kecil sesuai teks */
+            height: auto; /* Proporsi tetap */
+            vertical-align: middle; /* Posisikan sejajar teks */
+            margin-right: 5px; /* Jarak dengan teks */
+            border-radius: 3px; /* Sedikit membulatkan ikon */
+        }
+        .feedback-container {
+            margin-top: auto;
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #f8f9fa;
+            border-top: 1px solid #ddd;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+        a:active {
+            background-color: #004099;
+            color: white !important;
+        }
+        img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        .text-muted {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-4">
+    <h2 class="text-left">DataTables TTML Player For Android</h2>
+
+    <!-- Teks di bawah judul -->
+<div class="description-box">
+    <p><strong>📂 Web Database aplikasi lagu lirik ttml (Hifi Music/音乐播放器)</strong></p>
+    <p><strong>🌍 Datatable berbasis Google Apps Script dan Dihosting oleh Github 👨‍💻</strong></p>
+  
+  <!-- Link tombol tautan dan tombol repository github disini -->
+  <div class="d-flex gap-2 mb-3">
+      <a href="https://github.com/Ramadani1t" target="_blank" class="btn btn-dark">
+          <i class="bi bi-github"></i> Profil GitHub
+      </a>
+      <a href="https://github.com/xxx-source/Music-Player" target="_blank" class="btn btn-primary">
+          <i class="bi bi-github"></i> Repository GitHub
+      </a>
+      <a href="https://github.com/" target="_blank" class="btn btn-success">
+          <i class="bi bi-code-slash"></i> Biodata saya
+      </a>
+  </div>
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  
+    <p>Tombol download yang disertakan akan terdownload secara langsung</p>
+    <p><strong>Catatan:</strong> Untuk menampilkan lirik bisa menempatkan lirik berformat '.ttml' satu folder dengan audio ditempat yang sama, dan nama file audio yang sama, atau salin lirik dan masukan kedalam metadata audio secara langsung !!!</p>
+    <p><strong>Perhatian:</strong> File lirik berformat '.ttml' ini hanya bisa dipakai oleh pemutar musik seperti 
+       <a href="https://github.com/Steve-xmh/applemusic-like-lyrics" target="_blank">
+       <img src="https://raw.githubusercontent.com/Steve-xmh/applemusic-like-lyrics/refs/heads/full-refractor/packages/docs/public/favicon.ico" alt="AMLL Player">AMLL Player<span class="text-muted"> (Pencari lirik ttml dan shifting timestamp)</span></a>
+    </p>
+    <p><strong>Download juga aplikasi yang berhubungan dengan aplikasi ini:</strong></p>
+    <ul>
+      <li><a href="https://raw.githubusercontent.com/Ramadani1t/DBID-TTML-PLAYER/refs/heads/main/src/more/Lyrically%20%5B1.0%5D.apk" target="_blank">
+        <img src="https://github.com/Ramadani1t/DBID-TTML-PLAYER/blob/main/src/image/image.png?raw=true" alt="Lyrically">Lyrically <span class="text-muted"> (Pencari lirik TTML dan LRC)</span></a></li>
+      <li><a href="https://raw.githubusercontent.com/Ramadani1t/DBID-TTML-PLAYER/refs/heads/main/src/more/%E6%AD%8C%E8%AF%8D%E6%90%9C%E7%B4%A2%E5%99%A8%20%5B1.0.5%5D.apk" target="_blank">
+        <img src="https://www.codester.com/static/uploads/items/000/024/24445/preview/022.jpg" alt="歌词搜索器">歌词搜索器<span class="text-muted"> (Pencari lirik ttml dan shifting timestamp)</span></a></li>
+      <li><a href="https://raw.githubusercontent.com/Ramadani1t/DBID-TTML-PLAYER/refs/heads/main/src/more/Music%20Tag%20%5B1.2.5.2%5D.apk" target="_blank">
+        <img src="https://github.com/Ramadani1t/DBID-TTML-PLAYER/blob/main/src/image/image%20(1).png?raw=true" alt="Music Tag">Music Tag<span class="text-muted"> (Editor Metadata)</span></a></li>
+    </ul>
+
+    <p><strong>Kamu juga bisa membuat lirik khusus ttml sendiri di website ini
+        <a href="https://steve-xmh.github.io/amll-ttml-tool/" target="_blank">
+        <img src="https://github.com/Steve-xmh/amll-ttml-tool/raw/main/public/logo.svg" alt="AMLL TTML Tool">AMLL TTML Tool<span class="text-muted"> (Pembuat lirik TTML/LRC/ESLyric/YRC/QRC/Lyricify Syllable)</span></a></strong>
+    </p>
+
+    <p><strong>Atau kamu bisa lihat database ttml saya yang satu lagi tersedia subtitle indonesia
+        <a href="https://ramadani1t.github.io/DB-TTML-ID/" target="_blank">
+        Datatable TTML Indonesia</a></strong>
+    </p>
+  
+    <p>💡 <strong>Harap Jangan Disalahgunakan kepada pembuat!</strong> 🚀🎶</p>
+    <p>Silakan dicoba! Jika masih ada yang perlu diperbaiki atau ditambahkan, <strong>kirim feedback kalian! 😃</strong></p>
+  </div>
+    <div class="table-container">
+        <table id="example" class="table table-striped display responsive nowrap" width="100%">
+            <thead>
+                <tr>
+                    <th>Gambar</th>
+                    <th>Versi</th>
+                    <th>Minimum SDK</th>
+                    <th>Ukuran</th>
+                    <th>Sumber</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- DataTables akan mengisi ini -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Formulir Feedback -->
+<div class="feedback-container">
+    <h4>Kirim Feedback</h4>
+    <form id="feedbackForm">
+      <div class="mb-3">
+        <input type="text" class="form-control" id="name" placeholder="Nama Anda" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" id="email" placeholder="Email Anda" required>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" id="message" rows="3" placeholder="Tulis pesan Anda di sini..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Kirim Feedback</button>
+      <p class="mt-2"><small><i>📌 Kami tidak akan memberikan email Anda secara publik.</i></small></p>
+    </form>
+
+    <p class="mt-3"><strong>Jika tidak bisa mengirim feedback, kirim pesan ke email ini:</strong></p>
+    <div class="email-box">
+        <span class="email-text" id="emailText">ramadanii10.ns@gmail.com</span>
+        <button class="btn btn-sm btn-outline-primary" id="copyButton" onclick="copyEmail()">Salin</button>
+        <span id="copyMessage" style="color: green; font-weight: bold; display: none;">Disalin!</span>
+    </div>
+      
+    <!-- Footer -->
+  <footer class="footer">
+    Dibuat oleh <strong>Ramadani Arya Nugraha</strong> dan <strong>Chat GPT</strong> &copy; 2024
+  </footer>
+
+<!-- Modal Bootstrap -->
+<div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="detailModalLabel">Detail Aplikasi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="modalGambar" src="" class="img-fluid mb-3" alt="Gambar Aplikasi">
+                <p><strong>Versi:</strong> <span id="modalVersi"></span></p>
+                <p><strong>Minimum SDK:</strong> <span id="modalSDK"></span></p>
+                <p><strong>Ukuran:</strong> <span id="modalUkuran"></span></p>
+                <p><strong>Sumber:</strong> <span id="modalSumber"></span></p>
+                <p><strong>Changelog:</strong></p>
+                <ul id="modalChangelog"></ul>
+                <p><strong>Download:</strong></p>
+                <a id="modalDownloadID" href="#" class="btn btn-primary d-block mb-2" target="_blank">📥 Download (Bahasa Indonesia)</a>
+                <a id="modalDownloadOriginal" href="#" class="btn btn-secondary d-block" target="_blank">📥 Download Original</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('#example').DataTable({
+        responsive: true,
+        scrollX: true,
+        ajax: {
+            url: "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-Player/refs/heads/main/src/dataplikasi.json",
+            dataSrc: "data"
+        },
+        columns: [
+            { 
+                data: "gambar", 
+                title: "Gambar",
+                render: function(data) {
+                    return `<img src="${data}" alt="Gambar Aplikasi" width="60">`;
+                }
+            },
+            { data: "versi", title: "Versi" },
+            { data: "supported_android", title: "Minimum SDK" },
+            { data: "size", title: "Ukuran" },
+            { 
+                data: "sumber",
+                title: "Sumber",
+                render: function(data) {
+    let sumberName = data[0] || "Tidak tersedia";
+    let sumberURL = data[1] || "";
+    
+    // Menentukan warna tombol berdasarkan sumberName
+    let buttonClass = "btn-secondary"; // Default jika tidak cocok
+    if (sumberName === "Coolapk") {
+        buttonClass = "btn-success";
+    } else if (sumberName === "Github") {
+        buttonClass = "btn-dark";
+    }
+
+    let buttonHTML = sumberURL 
+        ? `<a href="${sumberURL}" target="_blank" class="btn ${buttonClass} btn-sm">🔗 ${sumberName}</a>` 
+        : `<button class="btn btn-secondary btn-sm" disabled>${sumberName} (URL Tidak Tersedia)</button>`;
+    
+    return buttonHTML;
+}
+
+            },
+            { 
+                data: null,
+                title: "Aksi",
+                render: function(data, type, row) {
+                    return `<button class="btn btn-info btn-sm" onclick="showDetails(${JSON.stringify(row).replace(/"/g, '&quot;')})">
+                                🔍 Info
+                            </button>`;
+                }
+            }
+        ]
+    });
+});
+
+function showDetails(data) {
+    $('#modalGambar').attr("src", data.gambar);
+    $('#modalVersi').text(data.versi);
+    $('#modalSDK').text(data.supported_android);
+    $('#modalUkuran').text(data.size);
+
+    // Menampilkan sumber
+    let sumberName = data.sumber[0] || "Tidak tersedia";
+    let sumberURL = data.sumber[1] || "";
+    if (sumberURL) {
+        $('#modalSumber').html(`<a href="${sumberURL}" target="_blank" class="btn btn-success btn-sm">🔗 ${sumberName}</a>`);
+    } else {
+        $('#modalSumber').html(`<button class="btn btn-secondary btn-sm" disabled>${sumberName} (URL Tidak Tersedia)</button>`);
+    }
+
+    // Changelog
+    let changelogHTML = data.changelog.map(item => `<li>${item}</li>`).join('');
+    $('#modalChangelog').html(changelogHTML);
+
+    // Download Links
+if (data.download_id && data.download_id[1]) {
+    $('#modalDownloadID').attr("href", data.download_id[1])
+                         .text(`📥 Download (${data.download_id[0]})`)
+                         .removeClass("disabled")
+                         .css("background-color", "blue");
+} else {
+    $('#modalDownloadID').attr("href", "#")
+                         .text("❌ Tidak ada bahasa Indonesia")
+                         .addClass("disabled")
+                         .css("background-color", "gray");
+}
+
+    $('#modalDownloadOriginal').attr("href", data.download_original || "#").text("📥 Download Original");
+
+    $('#detailModal').modal('show'); // Tampilkan modal
+}
+                // Form feedback - Kirim ke email pengguna
+                $('#feedbackForm').submit(function(event) {
+                    event.preventDefault();
+                    var name = $('#name').val();
+                    var email = $('#email').val();
+                    var message = $('#message').val();
+              
+                    var mailtoLink = "mailto:ramadanii10.ns@gmail.com?subject=Feedback dari " + encodeURIComponent(name) +
+                               "&body=Nama: " + encodeURIComponent(name) +
+                               "%0AEmail: " + encodeURIComponent(email) +
+                               "%0APesan: " + encodeURIComponent(message);
+                    window.location.href = mailtoLink;
+        });
+
+                // Fungsi menyalin email ke clipboard
+                function copyEmail() {
+                    var emailText = document.getElementById("emailText").innerText;
+                    var copyMessage = document.getElementById("copyMessage");
+                    var copyButton = document.getElementById("copyButton");
+
+                navigator.clipboard.writeText(emailText).then(function() {
+                  copyMessage.style.display = "inline"; // Tampilkan pesan "Disalin!"
+                  copyButton.innerText = "✔"; // Ganti teks tombol dengan centang
+
+                // Sembunyikan pesan salin email setelah 2 detik
+                setTimeout(function() {
+                  copyMessage.style.display = "none";
+                  copyButton.innerText = "Salin"; // Kembalikan teks tombol ke "Salin"
+                }, 2000);
+        });
+}
+</script>
+
+</body>
+</html>
