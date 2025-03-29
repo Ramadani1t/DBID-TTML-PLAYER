@@ -35,7 +35,7 @@
                     "Meningkatkan jumlah utas untuk 'pemindaian penuh' guna meningkatkan kecepatan pemindaian.",
                     "Mendukung Bahasa 'Inggris', 'Prancis', 'Spanyol', 'Korea', 'Jepang', 'Rusia', dan 'Jerman'."
                    ],
-      "download_id": ["Ditranslate ke Bahasa Indonesia 80%", "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-Player/refs/heads/main/src/sub%20indo/(SUB_IDN)Hifi_Status_1.0.9_Release_clone.APK"],
+      "download_id": ["Ditranslate ke Bahasa Indonesia 80%", "https://raw.githubusercontent.com/Ramadani1t/DBID-TTML-PLAYER/refs/heads/main/src/sub%20indo/(SUB_IDN)Hifi_Music_1.0.9_Release_clone.apk"],
       "download_original": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/871247470/d33a62bb-ee81-4b77-8a8e-a19ad14e6e38?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250329%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250329T030424Z&X-Amz-Expires=300&X-Amz-Signature=45d83da46306f8c4f59bca854380ce40b7cb563aee90a590ea7dc065894e7bda&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DMusic-Player_1.0.9_Release.APK&response-content-type=application%2Foctet-stream"
     },
     {
@@ -76,8 +76,8 @@
       "size": "2.39 MB",
       "sumber": ["Coolapk", ""],
       "changelog": ["Tidak ada pemeriksaan update", "Perbaikan bug"],
-      "download_id": ["Ditranslate ke Bahasa Indonesia 40%", "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-Player/refs/heads/main/src/sub%20indo/(SUB_IDN)Hifi%20Music%20%5B1.0.6%5D_clone.apk"],
-      "download_original": "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-ID/refs/heads/main/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%20%5B1.0.6%5D.apk"
+      "download_id": ["Ditranslate ke Bahasa Indonesia 40%", "https://raw.githubusercontent.com/Ramadani1t/DBID-TTML-Player/refs/heads/main/src/sub%20indo/(SUB_IDN)Hifi%20Music%20%5B1.0.6%5D_clone.apk"],
+      "download_original": "https://raw.githubusercontent.com/Ramadani1t/DBID-TTML-PLAYER/refs/heads/main/src/original/Hifi%20Music%20%5B1.0.6%5D.apk"
     },
     {
       "gambar": "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-ID/refs/heads/main/20250327_072901.png",
@@ -87,7 +87,7 @@
       "sumber": ["Coolapk", ""],
       "changelog": ["Tidak ada pemeriksaan update"],
       "download_id": ["Bahasa Indonesia", ""],
-      "download_original": "https://raw.githubusercontent.com/Ramadani1t/DB-TTML-Player/refs/heads/main/src/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8_1.0.5_flow_sign.apk"
+      "download_original": "https://raw.githubusercontent.com/Ramadani1t/DBID-TTML-PLAYER/refs/heads/main/src/original/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8_1.0.5_flow_sign.apk"
     }
   ]
 }
